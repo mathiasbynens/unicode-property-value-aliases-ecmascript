@@ -1,0 +1,41 @@
+{
+  "name": "unicode-property-value-aliases-ecmascript",
+  "version": "0.0.0",
+  "description": "Unicode property value alias mappings in JavaScript format, for property names and values that are supported in ECMAScript RegExp property escapes.",
+  "homepage": "https://github.com/mathiasbynens/unicode-property-value-aliases-ecmascript",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "LICENSE-MIT.txt",
+    "index.js"
+  ],
+  "keywords": [
+    "unicode",
+    "unicode-data",
+    "alias",
+    "aliases",
+    "property alias"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Mathias Bynens",
+    "url": "https://mathiasbynens.be/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathiasbynens/unicode-property-value-aliases-ecmascript.git"
+  },
+  "bugs": "https://github.com/mathiasbynens/unicode-property-value-aliases-ecmascript/issues",
+  "devDependencies": {
+    "ava": "*",
+    "jsesc": "^2.5.0",
+    "unicode-property-aliases-ecmascript": "^1.0.0"
+  },
+  "scripts": {
+    "download": "curl http://unicode.org/Public/9.0.0/ucd/PropertyValueAliases.txt > data/PropertyValueAliases.txt",
+    "build": "node scripts/build.js",
+    "test": "ava ./tests"
+  }
+}
