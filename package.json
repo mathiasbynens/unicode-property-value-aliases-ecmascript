@@ -1,6 +1,6 @@
 {
   "name": "unicode-property-value-aliases-ecmascript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unicode property value alias mappings in JavaScript format, for property names and values that are supported in ECMAScript RegExp property escapes.",
   "homepage": "https://github.com/mathiasbynens/unicode-property-value-aliases-ecmascript",
   "main": "index.js",
