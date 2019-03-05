@@ -1,7 +1,7 @@
 import test from 'ava';
 import propertyValueAliases from '../index.js';
 
-test(t => {
+test('unicode-property-value-aliases-ecmascript', t => {
 	t.is(
 		propertyValueAliases.get('General_Category').get('L'),
 		'Letter'
