@@ -4,7 +4,7 @@ _unicode-property-value-aliases-ecmascript_ offers Unicode property value alias 
 
 It only contains the Unicode property names and values that are supported in [ECMAScript RegExp property escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes).
 
-It’s based on [the `PropertyValueAliases.txt` data for Unicode v12.0.0](http://unicode.org/Public/12.0.0/ucd/PropertyValueAliases.txt).
+It’s based on Unicode’s `PropertyValueAliases.txt`.
 
 ## Installation
 
