@@ -1,4 +1,4 @@
-# unicode-property-value-aliases-ecmascript [![Build status](https://travis-ci.org/mathiasbynens/unicode-property-value-aliases-ecmascript.svg?branch=main)](https://travis-ci.org/mathiasbynens/unicode-property-value-aliases-ecmascript) [![unicode-property-value-aliases-ecmascript on npm](https://img.shields.io/npm/v/unicode-property-value-aliases-ecmascript)](https://www.npmjs.com/package/unicode-property-value-aliases-ecmascript)
+# unicode-property-value-aliases-ecmascript [![unicode-property-value-aliases-ecmascript on npm](https://img.shields.io/npm/v/unicode-property-value-aliases-ecmascript)](https://www.npmjs.com/package/unicode-property-value-aliases-ecmascript)
 
 _unicode-property-value-aliases-ecmascript_ offers Unicode property value alias mappings in an easy-to-consume JavaScript format.
 
