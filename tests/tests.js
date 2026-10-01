@@ -66,4 +66,9 @@ test('unicode-property-value-aliases-ecmascript', t => {
 		propertyValueAliases.get('Script_Extensions').get('Berf'),
 		'Beria_Erfe'
 	);
+        // Unicode 18
+	t.assert.ok(
+		propertyValueAliases.get('Script_Extensions').get('Jurc'),
+		'Jurchen'
+	);
 });
