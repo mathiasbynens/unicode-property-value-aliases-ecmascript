@@ -1,5 +1,5 @@
-const test = require('node:test');
-const propertyValueAliases = require('../index.js');
+import test from 'node:test';
+import propertyValueAliases from '../index.mjs';
 
 test('unicode-property-value-aliases-ecmascript', t => {
 	t.assert.ok(

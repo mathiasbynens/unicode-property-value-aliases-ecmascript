@@ -1,12 +1,10 @@
-'use strict';
+import fs from 'node:fs/promises';
+import jsesc from 'jsesc';
+import propertyAliases from 'unicode-property-aliases-ecmascript';
 
-const fs = require('fs');
-const jsesc = require('jsesc');
-const propertyAliases = require('unicode-property-aliases-ecmascript');
-
-const parsePropertyValueAliases = function() {
+const parsePropertyValueAliases = async () => {
 	const propertyValueAliasesPerProperty = new Map();
-	const source = fs.readFileSync('./data/PropertyValueAliases.txt', 'utf8');
+	const source = await fs.readFile('./data/PropertyValueAliases.txt', 'utf8');
 	const lines = source.split('\n');
 	for (const line of lines) {
 		if (!line || /^#/.test(line)) {
@@ -42,7 +40,7 @@ const parsePropertyValueAliases = function() {
 	return propertyValueAliasesPerProperty;
 };
 
-const mappings = parsePropertyValueAliases();
+const mappings = await parsePropertyValueAliases();
 
 // Delete binary properties.
 for (const [property, values] of mappings) {
@@ -60,9 +58,9 @@ const scriptMappings = mappings.get('Script');
 mappings.set('Script_Extensions', scriptMappings);
 
 const header = '// Generated using `npm run build`. Do not edit!';
-const output = `${ header }\nmodule.exports = ${
+const output = `${ header }\nexport default ${
 	jsesc(mappings, {
 		'compact': false
 	})
 };\n`;
-require('fs').writeFileSync('./index.js', output);
+await fs.writeFile('./index.mjs', output);

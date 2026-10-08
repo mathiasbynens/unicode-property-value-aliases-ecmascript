@@ -1,5 +1,5 @@
 // Generated using `npm run build`. Do not edit!
-module.exports = new Map([
+export default new Map([
 	['General_Category', new Map([
 		['C', 'Other'],
 		['Cc', 'Control'],

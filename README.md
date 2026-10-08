@@ -14,10 +14,10 @@ To use _unicode-property-value-aliases-ecmascript_ programmatically, install it 
 $ npm install unicode-property-value-aliases-ecmascript
 ```
 
-Then, `require` it:
+Then, `import` it:
 
 ```js
-const propertyValueAliases = require('unicode-property-value-aliases-ecmascript');
+import propertyValueAliases from 'unicode-property-value-aliases-ecmascript';
 ```
 
 ## Usage
